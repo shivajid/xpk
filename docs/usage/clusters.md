@@ -55,21 +55,21 @@ all zones.
 
     ```shell
     xpk cluster create \
-    --cluster xpk-test --tpu-type=v5litepod-16 \
+    --cluster xpk-test --tpu-type=v5p-16 \
     --num-slices=4 --spot
     ```
 
 * Cluster Create (DWS flex queued capacity):
     ```shell
         xpk cluster create \
-        --cluster xpk-test --tpu-type=v5litepod-16 \
+        --cluster xpk-test --tpu-type=v5p-16 \
         --num-slices=4 --flex
     ```
 
 *   Cluster Create with CPU and/or memory quota:
     ```shell
     xpk cluster create \
-    --cluster xpk-test --tpu-type=v5litepod-16 \
+    --cluster xpk-test --tpu-type=v5p-16 \
     --cpu-limit=112 --memory-limit=192Gi \
     --on-demand
     ```
@@ -101,7 +101,7 @@ Pathways compatible cluster can be created using `cluster create-pathways`.
 
     ```shell
     xpk cluster create \
-    --cluster xpk-test --tpu-type=v5litepod-16 \
+    --cluster xpk-test --tpu-type=v5p-16 \
     --num-slices=4  --reservation=$RESERVATION_ID
     ```
 
@@ -110,7 +110,7 @@ Pathways compatible cluster can be created using `cluster create-pathways`.
 
     ```shell
     xpk cluster create \
-    --cluster xpk-test --tpu-type=v5litepod-16 \
+    --cluster xpk-test --tpu-type=v5p-16 \
     --num-slices=8  --reservation=$RESERVATION_ID
     ```
 
@@ -120,13 +120,13 @@ Pathways compatible cluster can be created using `cluster create-pathways`.
 
     ```shell
     xpk cluster create \
-    --cluster xpk-test --tpu-type=v5litepod-16 \
+    --cluster xpk-test --tpu-type=v5p-16 \
     --num-slices=6  --reservation=$RESERVATION_ID
 
     # Skip delete prompts using --force.
 
     xpk cluster create --force \
-    --cluster xpk-test --tpu-type=v5litepod-16 \
+    --cluster xpk-test --tpu-type=v5p-16 \
     --num-slices=6  --reservation=$RESERVATION_ID
     ```
 
